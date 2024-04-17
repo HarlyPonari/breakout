@@ -10,6 +10,10 @@ set(SOURCES
   src/resource_manager.cpp
   src/glad.c
   src/sprite_renderer.cpp
+  src/game_object.cpp
+  src/game_level.cpp
+  
+  
 )
 
 include_directories(

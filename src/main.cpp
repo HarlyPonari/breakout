@@ -55,6 +55,9 @@ int main() {
 
   while (!glfwWindowShouldClose(window)) {
     //code goes crazy here
+    glClearColor(0.07f, 0.13f, 0.17f, 1.0f);
+    glClear(GL_COLOR_BUFFER_BIT);
+    
     float currentFrame = glfwGetTime();
     deltaTime = currentFrame - lastFrame;
     lastFrame = currentFrame;
@@ -67,8 +70,7 @@ int main() {
     // rendering
     Breakout.Render();
 
-    glClearColor(0.07f, 0.13f, 0.17f, 1.0f);
-    glClear(GL_COLOR_BUFFER_BIT);
+    
     glfwSwapBuffers(window);
   }
   
