@@ -12,8 +12,8 @@ set(SOURCES
   src/sprite_renderer.cpp
   src/game_object.cpp
   src/game_level.cpp
-  
-  
+  src/ball_object.cpp    
+  src/particle_generator.cpp
 )
 
 include_directories(

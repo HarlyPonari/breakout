@@ -9,3 +9,10 @@ GameObject::GameObject(glm::vec2 pos, glm::vec2 size, Texture2D sprite, glm::vec
 void GameObject::Draw(SpriteRenderer &renderer){
   renderer.DrawSprite(this->Sprite, this->Position, this->Size, this->Rotation, this->Color);
 }
+
+// bool GameObject::CheckCollision(GameObject& one, GameObject& two){
+//   bool collisionX = one.Position.x + one.Size.x >= two.Position.x && two.Position.x + two.Size.x >= one.Position.x;
+//   bool collisionY = one.Position.y + one.Size.y >= two.Position.y && two.Position.y + two.Size.y >= one.Position.y;
+// 
+//   return collisionX && collisionY;
+// }
